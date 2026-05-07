@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #0b1f4d;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  background: #3b82f6;
+  padding: 8px 14px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  color: white;
+  background: 
+    linear-gradient(rgba(11, 31, 77, 0.7), rgba(37, 99, 235, 0.7)),
+    url("images/house.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* FORCE HEADINGS CENTER */
+.services h2,
+.properties h2,
+.contact h2 {
+  text-align: center;
+  width: 100%;
+}
+
+/* GRID */
+.service-grid,
+.property-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  width: 250px;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* FOOTER */
+footer {
+  background: #0b1f4d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+h2 {
+  margin-bottom: 30px;
+}
+.property-grid,
+.service-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* GRIDS */
+  .property-grid,
+  .service-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CARDS */
+  .card {
+    width: 90%;
+  }
+
+  /* INPUTS */
+  input, select {
+    width: 90%;
+  }
+
+  /* SECTION SPACING */
+  section {
+    padding: 40px 15px;
+  }
+}header {
+  flex-wrap: wrap;
+}

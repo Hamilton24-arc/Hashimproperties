@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button onclick="logout()"class="btn">Logout</button>
+    <div class="logo">Dashboard</div>
+    <a href="index.html" class="btn">Back to Site</a>
+  </header>
+
+  <section>
+    <h2>Add Property</h2>
+
+    <input type="text" id="title" placeholder="Property Title"><br><br>
+    <input type="text" id="location" placeholder="Location"><br><br>
+    <select id="currency">
+  <option value="₦">₦ (Naira)</option>
+  <option value="$">$ (Dollar)</option>
+</select><br><br>
+<input type="number" id="price" placeholder="Price"><br><br>
+    
+
+    <button onclick="addProperty()" class="btn">Add Property</button>
+  </section>
+
+  <section>
+    <h2>All Properties</h2>
+    <div id="propertyList"></div>
+  </section>
+
+  <script src="app.js"></script>
+  <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+  <button onclick="logout()"class="btn">Logout</button>
+</script>
+</body>
+</html>
